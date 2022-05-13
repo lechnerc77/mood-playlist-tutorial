@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "FACERECOGNTION_ENDPOINT": "",
+    "FACERECOGNTION_API_KEY": "",
+    "SPOTIFY_CLIENT_ID": "",
+    "SPOTIFY_CLIENT_SECRET": "",
+    "COURIER_API_KEY": ""
+  }
+}

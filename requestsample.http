@@ -1,0 +1,9 @@
+###
+POST http://localhost:7071/api/CourierSend
+content-type: application/json
+
+{
+    "email": "PUT YOUR EMAIL HERE",
+    "name":  "PUT YOUR NAME HERE",
+    "imageUrl": "PUT YOUR IMAGE URL HERE"
+}
