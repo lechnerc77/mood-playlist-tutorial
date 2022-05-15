@@ -7,9 +7,9 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "@azure/cognitiveservices-face": "^5.0.0",
-    "@azure/ms-rest-js": "^2.6.1",
-    "@trycourier/courier": "^3.12.0",
-    "node-fetch": "^2.6.7"
+    "@azure/cognitiveservices-face": "5.0.0",
+    "@azure/ms-rest-js": "2.6.1",
+    "@trycourier/courier": "3.12.0",
+    "node-fetch": "2.6.7"
   }
 }

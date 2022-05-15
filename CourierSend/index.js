@@ -5,6 +5,9 @@ const MsRest = require("@azure/ms-rest-js")
 
 module.exports = async function (context, req) {
 
+
+    if (req.body && req.body.imageUrl && req.body.name && req.body.email) {
+
     const { email, name, imageUrl } = req.body
 
     const extractedEmotions = await extractEmotionsFromPicture(imageUrl, context)
@@ -29,7 +32,15 @@ module.exports = async function (context, req) {
     context.res = {
         body: responseMessage
     }
+    }
 
+    else {
+        context.res = {
+            status: 400,
+            body: "Provide email, name and URL to picture via the request body."
+        }
+    
+    }
 }
 
 function determinePredominantEmotion(extractedEmotions) {
